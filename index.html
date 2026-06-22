@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5K Familiar · Celebración de Cumpleaños</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo" aria-label="5K 2026">
+        <img src="IMG_0259.png" alt="5K Familiar 2026" class="nav-logo-img" />
+        <span class="nav-logo-text">5K <em>2026</em></span>
+      </a>
+      <div class="nav-links">
+        <a href="#strava">La ruta</a>
+        <a href="#inscripcion">Inscripción</a>
+        <a href="#detalles">Detalles</a>
+        <a href="#itinerario">Itinerario</a>
+        <a href="#rsvp" class="nav-cta">Confirmar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+      <div class="wave wave-3"></div>
+      <div class="bubble-field" aria-hidden="true"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-countdown" id="hero-countdown">
+        <p class="hero-countdown-label">El día llega</p>
+        <div class="hero-countdown-grid" id="countdown-grid">
+          <div class="hero-countdown-unit">
+            <span class="hero-countdown-number" id="cd-days">00</span>
+            <span class="hero-countdown-unit-label">Días</span>
+          </div>
+          <span class="hero-countdown-sep">:</span>
+          <div class="hero-countdown-unit">
+            <span class="hero-countdown-number" id="cd-hours">00</span>
+            <span class="hero-countdown-unit-label">Horas</span>
+          </div>
+          <span class="hero-countdown-sep">:</span>
+          <div class="hero-countdown-unit">
+            <span class="hero-countdown-number" id="cd-minutes">00</span>
+            <span class="hero-countdown-unit-label">Min</span>
+          </div>
+          <span class="hero-countdown-sep">:</span>
+          <div class="hero-countdown-unit">
+            <span class="hero-countdown-number" id="cd-seconds">00</span>
+            <span class="hero-countdown-unit-label">Seg</span>
+          </div>
+        </div>
+        <p class="hero-countdown-done hidden" id="countdown-done">¡Llegó el día del 5K! 🎉</p>
+      </div>
+      <h1 class="hero-title">Corre<br><em>conmigo!</em></h1>
+      <p class="hero-subtitle">5K Familiar &amp; Celebración de Cumpleaños</p>
+      <p class="hero-description">Corre, celebra y comparte con nosotros un día especial lleno de energía, familia, amistad y buena comida.</p>
+      <div class="hero-actions">
+        <a href="#rsvp" class="btn btn-primary">Confirmar asistencia</a>
+        <a href="#detalles" class="btn btn-outline">Ver detalles</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STRAVA — full bleed cinematic -->
+  <section class="strava-section" id="strava">
+    <img src="IMG_0200.png" alt="Ruta del 5K — San Juan" class="strava-bg-img" loading="lazy" />
+    <div class="strava-overlay"></div>
+    <!-- Text overlay: left side -->
+    <div class="strava-text-box">
+      <h2 class="strava-title">Ya lo corrí.<br><em>Ahora es tu turno.</em></h2>
+      <p class="strava-desc">Esta es la ruta que vamos a conquistar juntos el 18 de julio. Preparé el camino, tú pones la energía.</p>
+    </div>
+  </section>
+
+
+  <!-- GALERIA DE LA RUTA -->
+  <section class="gallery-section">
+    <div class="gallery-header container">
+      <p class="section-eyebrow">El recorrido</p>
+      <h2 class="section-title">Algunas de las vistas que verás en ruta</h2>
+      <p class="gallery-sub">El Puente de los Hermanos · Condado · San Juan · Al amanecer</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall">
+        <img src="ruta1.png" alt="Corredor en ruta al amanecer" loading="lazy" />
+        <div class="gallery-item-overlay"><span>El camino</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="ruta2.png" alt="Amanecer en el Puente de los Hermanos" loading="lazy" />
+        <div class="gallery-item-overlay"><span>Amanecer en el puente</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="ruta3.png" alt="Vista del boardwalk al atardecer" loading="lazy" />
+        <div class="gallery-item-overlay"><span>El boardwalk</span></div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="ruta4.png" alt="Vista al océano desde la ruta" loading="lazy" />
+        <div class="gallery-item-overlay"><span>Vista al océano</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- DETALLES -->
+  <section class="details-section" id="detalles">
+    <div class="container">
+      <p class="section-eyebrow">El plan</p>
+      <h2 class="section-title">Detalles del evento</h2>
+      <div class="details-grid">
+        <div class="detail-card accent-coral">
+          <div class="detail-icon">📅</div>
+          <div class="detail-info">
+            <span class="detail-label">Fecha</span>
+            <span class="detail-value">18 de julio de 2026</span>
+          </div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">🕕</div>
+          <div class="detail-info">
+            <span class="detail-label">Hora de llegada</span>
+            <span class="detail-value">6:00 AM</span>
+          </div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">🏃</div>
+          <div class="detail-info">
+            <span class="detail-label">Inicio del 5K</span>
+            <span class="detail-value">6:30 AM en punto</span>
+          </div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">🍽️</div>
+          <div class="detail-info">
+            <span class="detail-label">Comida / Celebración</span>
+            <span class="detail-value">Golden Corral · Bayamón<br><small style="color:#7a9aa0;font-size:0.82rem">Al terminar el evento · Solo para quienes vayan a comer</small></span>
+          </div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">📍</div>
+          <div class="detail-info">
+            <span class="detail-label">Punto de encuentro</span>
+            <span class="detail-value">Puente de los Hermanos · San Juan</span>
+          </div>
+        </div>
+        <div class="detail-card accent-aqua">
+          <div class="detail-icon">🚗</div>
+          <div class="detail-info">
+            <span class="detail-label">Estacionamiento</span>
+            <span class="detail-value">Parking disponible en el area</span>
+            <a
+              href="https://www.google.com/maps/place/18%C2%B027'14.6%22N+66%C2%B005'20.3%22W/@18.4540424,-66.088974,17z"
+              target="_blank"
+              rel="noopener"
+              class="maps-btn"
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ver parking en Maps
+            </a>
+          </div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">🗺️</div>
+          <div class="detail-info">
+            <span class="detail-label">Ruta</span>
+            <span class="detail-value">Puente de los Hermanos → El Capitolio → Regreso</span>
+          </div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">💰</div>
+          <div class="detail-info">
+            <span class="detail-label">Costo adicional</span>
+            <span class="detail-value">Inscripción $15 · Comida en Golden Corral aparte</span>
+          </div>
+        </div>
+        <!-- Dress code interactivo -->
+        <div class="detail-card dresscode-card-inline full-width">
+          <div class="dresscode-shirt-wrap">
+            <svg class="dresscode-shirt" id="dresscode-shirt" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="shirt-body" d="M40 26 L28 34 L20 50 L30 58 L38 50 L38 96 Q38 100 42 100 L78 100 Q82 100 82 96 L82 50 L90 58 L100 50 L92 34 L80 26 Q70 36 60 36 Q50 36 40 26 Z" fill="#ff6f61" stroke="#12343b" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M40 26 Q50 36 60 36 Q70 36 80 26" fill="none" stroke="#12343b" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="detail-info">
+            <span class="detail-label">Dress code sugerido</span>
+            <span class="detail-value">Viste de coral, o súmate con tonos complementarios. Toca un color para verlo 🎨</span>
+            <div class="dresscode-swatches" id="dresscode-swatches">
+              <button type="button" class="swatch active" data-color="#ff6f61" style="background:#ff6f61;" aria-label="Coral"></button>
+              <button type="button" class="swatch" data-color="#ff9a8b" style="background:#ff9a8b;" aria-label="Salmón"></button>
+              <button type="button" class="swatch" data-color="#f4c95d" style="background:#f4c95d;" aria-label="Gold"></button>
+              <button type="button" class="swatch" data-color="#ffb4a2" style="background:#ffb4a2;" aria-label="Durazno"></button>
+              <button type="button" class="swatch" data-color="#e8825d" style="background:#e8825d;" aria-label="Naranja"></button>
+              <button type="button" class="swatch" data-color="#4ecdc4" style="background:#4ecdc4;" aria-label="Aqua"></button>
+              <button type="button" class="swatch" data-color="#b8f2e6" style="background:#b8f2e6;" aria-label="Seafoam"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ITINERARIO -->
+  <section class="schedule-section" id="itinerario">
+    <div class="container">
+      <p class="section-eyebrow">El dia</p>
+      <h2 class="section-title">Itinerario</h2>
+      <div class="timeline">
+        <div class="timeline-item featured">
+          <div class="timeline-time">6:00 AM</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Llegada y bienvenida</h3>
+            <p>Nos encontramos en el Puente de los Hermanos</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">6:15 AM</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Warm-up</h3>
+            <p>Calentamiento grupal antes de la carrera</p>
+          </div>
+        </div>
+        <div class="timeline-item featured">
+          <div class="timeline-time">6:30 AM</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>¡Sale el 5K!</h3>
+            <p>Puente de los Hermanos → El Capitolio → Regreso</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">Al terminar</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Break / Fotos</h3>
+            <p>Agua, fotos y a recuperar fuerzas</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">Post-carrera</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Comida después del 5K</h3>
+            <p>Golden Corral · Bayamón · Para quienes confirmaron comer</p>
+          </div>
+        </div>
+        <div class="timeline-item featured">
+          <div class="timeline-time">En la comida</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>🎂 Celebración de cumpleaños</h3>
+            <p>Pastel, música y mucho amor en Golden Corral</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSCRIPCION -->
+  <section class="registration-section" id="inscripcion">
+    <div class="container">
+      <p class="section-eyebrow">Inscripción</p>
+      <h2 class="section-title">Tu inscripción apoya<br>una misión más grande</h2>
+      <p class="section-desc">Este año, lo recaudado en inscripciones ayudará a cubrir gastos del viaje misionero a Honduras en julio 2026. Corre por ti, y de paso ayuda a otros. 💙</p>
+
+      <div class="registration-card">
+        <div class="registration-card-header">
+          <div class="registration-price-badge">
+            <span class="reg-price-amount">$15</span>
+            <span class="reg-price-label">por persona</span>
+          </div>
+          <div class="registration-includes">
+            <h3 class="reg-includes-title">Tu inscripción incluye</h3>
+            <ul class="reg-includes-list">
+              <li>
+                <span class="reg-icon">🏅</span>
+                <span>Certificado de participación</span>
+              </li>
+              <li>
+                <span class="reg-icon">🍫</span>
+                <span>Snack de proteína <em>(brownie o donas)</em></span>
+              </li>
+              <li>
+                <span class="reg-icon">💉</span>
+                <span>Immunity shot</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="registration-payment">
+          <p class="reg-payment-label">Pago vía ATH Móvil</p>
+          <div class="reg-payment-number">787-425-1241</div>
+          <p class="reg-payment-hint">Envía tu pago y guarda el comprobante. Te pediremos confirmar el pago al llenar el RSVP.</p>
+        </div>
+
+        <div class="registration-mission">
+          <span class="reg-mission-icon">🇭🇳</span>
+          <p>100% de lo recaudado en inscripciones va directo al fondo del viaje misionero a Honduras, julio 2026.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEVITA TRUE FIT NUTRITION -->
+  <section class="sevita-section">
+    <div class="container">
+      <div class="sevita-card">
+        <div class="sevita-logo-wrap">
+          <img src="IMG_0221.jpeg" alt="Sevita True Fit Nutrition" class="sevita-logo" loading="lazy" />
+        </div>
+        <div class="sevita-info">
+          <p class="section-eyebrow">Patrocinador local</p>
+          <h2 class="sevita-title">¿Antojo de algo<br><em>refrescante</em>?</h2>
+          <p class="sevita-desc">Sevita True Fit Nutrition trae sus Mega Té directo al evento. Bebidas refrescantes, saludables y llenas de sabor — perfectas para después de correr.</p>
+
+          <div class="sevita-price-tag">
+            <span class="sevita-price">$10</span>
+            <span class="sevita-price-label">Mega Té · Cualquier sabor</span>
+          </div>
+
+          <button type="button" class="btn btn-primary sevita-cta" id="open-megate-modal">
+            Ver sabores y ordenar 🥤
+          </button>
+
+          <p class="sevita-delivery">Delivery área metro · Lunes a sábado · 8:00 AM – 5:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEGA TE MODAL / FORM -->
+  <div class="megate-overlay hidden" id="megate-overlay">
+    <div class="megate-card">
+      <button type="button" class="megate-close" id="megate-close" aria-label="Cerrar">×</button>
+
+      <div class="megate-header">
+        <p class="section-eyebrow">Sevita True Fit Nutrition</p>
+        <h2 class="megate-title">Pide tu Mega Té</h2>
+        <p class="megate-sub">Selecciona tu sabor favorito. Te contactaremos para coordinar el pago y la entrega.</p>
+      </div>
+
+      <div class="megate-menu-img-wrap">
+        <img src="IMG_0220.jpeg" alt="Menú de sabores Mega Té" class="megate-menu-img" loading="lazy" />
+      </div>
+
+      <div class="megate-form-body">
+        <div class="form-grid">
+          <div class="form-group full">
+            <label class="form-label" for="mt-nombre">Nombre completo <span class="required">*</span></label>
+            <input type="text" id="mt-nombre" class="form-input" placeholder="Tu nombre completo" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="mt-telefono">Teléfono <span class="required">*</span></label>
+            <input type="tel" id="mt-telefono" class="form-input" placeholder="+1 (000) 000-0000" autocomplete="tel" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="mt-cantidad">Cantidad</label>
+            <input type="number" id="mt-cantidad" class="form-input" placeholder="1" min="1" max="20" value="1" />
+          </div>
+          <div class="form-group full">
+            <label class="form-label" for="mt-sabor">¿Qué sabor quieres? <span class="required">*</span></label>
+            <select id="mt-sabor" class="form-select">
+              <option value="">— Selecciona un sabor —</option>
+              <option value="Granada">Granada</option>
+              <option value="Green Apple">Green Apple</option>
+              <option value="Blue Blast">Blue Blast</option>
+              <option value="Uva">Uva</option>
+              <option value="Coco">Coco</option>
+              <option value="Pitaya">Pitaya</option>
+              <option value="Mango">Mango</option>
+              <option value="China">China</option>
+              <option value="Cranberry">Cranberry</option>
+              <option value="Limón">Limón</option>
+              <option value="Limonada">Limonada</option>
+              <option value="Watermelon">Watermelon</option>
+              <option value="Parcha">Parcha</option>
+              <option value="Fresa">Fresa</option>
+              <option value="Fresa Kiwi">Fresa Kiwi</option>
+              <option value="Fresa Limón">Fresa Limón</option>
+              <option value="Fresa Coco">Fresa Coco</option>
+              <option value="Fresa Parcha">Fresa Parcha</option>
+              <option value="Parcha Coco">Parcha Coco</option>
+              <option value="Blue Coco">Blue Coco</option>
+              <option value="Green Coco">Green Coco</option>
+              <option value="Pitaya Coco">Pitaya Coco</option>
+              <option value="Iced Tea">Iced Tea</option>
+              <option value="Vino">Vino</option>
+              <option value="Peach">Peach</option>
+              <option value="Piña Colada">Piña Colada</option>
+              <option value="Frutas Tropicales">Frutas Tropicales</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label class="form-label" for="mt-notas">Notas adicionales</label>
+            <textarea id="mt-notas" class="form-textarea" placeholder="¿Algo más que debamos saber?"></textarea>
+          </div>
+        </div>
+
+        <div class="megate-payment-note">
+          <p>Pago vía ATH Móvil: <strong>787-425-1241</strong> · $10 por Mega Té</p>
+        </div>
+
+        <div class="form-error hidden" id="megate-error" role="alert"></div>
+
+        <button type="button" class="btn btn-primary btn-submit" id="megate-submit-btn">
+          <span class="btn-text">Enviar pedido</span>
+          <span class="btn-loading hidden"><span class="spinner"></span> Enviando...</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEGA TE CONFIRMATION -->
+  <div class="confirmation-overlay hidden" id="megate-confirmation-overlay">
+    <div class="confirmation-card">
+      <div class="confirmation-icon">🥤</div>
+      <h2>¡Pedido recibido!</h2>
+      <p>Gracias por apoyar a Sevita True Fit Nutrition. Te contactaremos pronto para coordinar el pago y la entrega.</p>
+      <div class="confirmation-summary" id="megate-conf-summary"></div>
+      <button type="button" class="btn btn-outline" id="megate-close-confirmation">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- RSVP -->
+  <section class="rsvp-section" id="rsvp">
+    <div class="container">
+      <p class="section-eyebrow">Tu respuesta</p>
+      <h2 class="section-title">Confirma tu asistencia</h2>
+      <p class="section-desc">Llena el formulario para que te tengamos en cuenta. Puedes actualizar tu respuesta cuando quieras con tu codigo RSVP.</p>
+      <div class="form-card" id="form-card">
+        <div class="update-mode-toggle">
+          <p>Ya respondiste antes? <button type="button" class="link-btn" id="toggle-update-mode">Actualiza tu respuesta aqui</button></p>
+        </div>
+        <div class="update-code-row hidden" id="update-code-row">
+          <label class="form-label" for="rsvp-update-code">Tu codigo RSVP</label>
+          <div class="code-input-row">
+            <input type="text" id="rsvp-update-code" class="form-input code-input" placeholder="5K-XXXXXX" maxlength="9" />
+            <button type="button" class="btn btn-small btn-aqua" id="apply-code-btn">Aplicar</button>
+          </div>
+          <p class="update-status hidden" id="update-status"></p>
+          <button type="button" class="link-btn" id="toggle-new-mode">Llenar como nuevo</button>
+        </div>
+        <div class="mode-badge hidden" id="mode-badge">
+          <span>Modo actualizacion - <strong id="active-code-display"></strong></span>
+        </div>
+        <div class="form-body" id="form-body">
+          <div class="form-grid">
+            <div class="form-group full">
+              <label class="form-label" for="f-nombre">Nombre completo <span class="required">*</span></label>
+              <input type="text" id="f-nombre" class="form-input" placeholder="Tu nombre completo" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-telefono">Telefono <span class="required">*</span></label>
+              <input type="tel" id="f-telefono" class="form-input" placeholder="+1 (000) 000-0000" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-email">Email <span class="required">*</span></label>
+              <input type="email" id="f-email" class="form-input" placeholder="tu@correo.com" autocomplete="email" />
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="f-asistencia">Como participaras? <span class="required">*</span></label>
+              <select id="f-asistencia" class="form-select">
+                <option value="">Selecciona una opcion</option>
+                <option value="Solo corre el 5K">Solo correre el 5K</option>
+                <option value="Solo ire a comer despues del 5K">Solo ire a comer despues del 5K</option>
+                <option value="Correre el 5K y tambien ire a comer">Correre el 5K y tambien ire a comer</option>
+                <option value="No podre asistir">No podre asistir</option>
+                <option value="No estoy seguro todavia">No estoy seguro todavia</option>
+              </select>
+            </div>
+            <div class="form-group" id="group-acompanantes">
+              <label class="form-label" for="f-cantidad">Acompanantes adicionales</label>
+              <input type="number" id="f-cantidad" class="form-input" placeholder="0" min="0" max="20" value="0" />
+              <p class="form-hint">Personas adicionales que vienen contigo</p>
+            </div>
+            <div class="form-group" id="group-nombres-acompanantes">
+              <label class="form-label" for="f-nombres-acompanantes">Nombres de acompanantes</label>
+              <input type="text" id="f-nombres-acompanantes" class="form-input" placeholder="Ej: Maria, Juan, Sofia" />
+              <p class="form-hint">Separa los nombres con comas</p>
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="f-notas">Notas adicionales</label>
+              <textarea id="f-notas" class="form-textarea" placeholder="Alguna restriccion alimentaria, necesidad especial o comentario?"></textarea>
+            </div>
+          </div>
+          <div class="form-error hidden" id="form-error" role="alert"></div>
+          <button type="button" class="btn btn-primary btn-submit" id="submit-btn">
+            <span class="btn-text">Confirmar asistencia</span>
+            <span class="btn-loading hidden"><span class="spinner"></span> Enviando...</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIRMACION -->
+  <div class="confirmation-overlay hidden" id="confirmation-overlay">
+    <div class="confirmation-card">
+      <div class="confirmation-icon">🎉</div>
+      <h2 id="confirmation-title">Gracias por confirmar!</h2>
+      <p id="confirmation-subtitle">Recibimos tu respuesta. Nos vemos el 18 de julio!</p>
+      <div class="rsvp-code-display">
+        <p class="rsvp-code-label">Tu codigo RSVP</p>
+        <div class="rsvp-code-value" id="conf-code">-</div>
+        <p class="rsvp-code-hint">Guarda este codigo si deseas actualizar tu asistencia.</p>
+      </div>
+      <div class="confirmation-summary" id="conf-summary"></div>
+      <button type="button" class="btn btn-outline" id="close-confirmation">Volver al inicio</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo-wrap">
+        <img src="IMG_0259.png" alt="5K Familiar 2026" class="footer-logo-img" />
+      </div>
+      <blockquote class="footer-verse">
+        <p>"Pero los que esperan a Jehová tendrán nuevas fuerzas; levantarán alas como las águilas; correrán, y no se cansarán; caminarán, y no se fatigarán."</p>
+        <cite>Isaías 40:31</cite>
+      </blockquote>
+      <p class="footer-sub">Únete al grupo para coordinar y resolver dudas</p>
+      <a href="https://chat.whatsapp.com/HKfrkcI5VEvGqurxJAf9Cq" class="footer-whatsapp" target="_blank" rel="noopener">
+        Únete al grupo de WhatsApp
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
