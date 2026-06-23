@@ -10,7 +10,7 @@
  * Instrucciones: Extensiones → Apps Script → Implementar → Nueva implementación
  * Tipo: Aplicación web | Ejecutar como: Yo | Acceso: Cualquier persona
  */
-const RSVP_ENDPOINT = "PASTE_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbw17BgOebdbBUxg8XP9uQPynWQsPFYqwWcdf_6tL621rqc_EZ2kZTug93zmhPTXZHf_uQ/exec";
 
 /**
  * Fecha y hora del evento (ISO 8601, sin zona horaria = local del dispositivo).
@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
  * Puede ser el mismo Google Apps Script (con un "mode" distinto)
  * o un Web App / Google Form diferente — tú decides.
  */
-const MEGATE_ENDPOINT = "PASTE_MEGATE_ENDPOINT_HERE";
+const MEGATE_ENDPOINT = "https://script.google.com/macros/s/AKfycbw17BgOebdbBUxg8XP9uQPynWQsPFYqwWcdf_6tL621rqc_EZ2kZTug93zmhPTXZHf_uQ/exec";
 
 let megateSubmitting = false;
 
