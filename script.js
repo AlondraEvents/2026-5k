@@ -10,13 +10,13 @@
  * Instrucciones: Extensiones → Apps Script → Implementar → Nueva implementación
  * Tipo: Aplicación web | Ejecutar como: Yo | Acceso: Cualquier persona
  */
-const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbw17BgOebdbBUxg8XP9uQPynWQsPFYqwWcdf_6tL621rqc_EZ2kZTug93zmhPTXZHf_uQ/exec";
+const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycby0gZwfniiUiL4GrjqaAfiidIajbIL2n4HjafOLJKchIzt4CWP1le7GYT_W8hIQ1qnekA/exec";
 
 /**
  * Fecha y hora del evento (ISO 8601, sin zona horaria = local del dispositivo).
  * Cambia si necesitas ajustar.
  */
-const EVENT_DATE = "2026-07-18T06:00:00";
+const EVENT_DATE = "2026-07-18T06:30:00";
 
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -269,7 +269,7 @@ $$('submit-btn').addEventListener('click', async () => {
   try {
     const response = await fetch(RSVP_ENDPOINT, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
       body: JSON.stringify(payload),
       mode: 'cors',
     });
@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
  * Puede ser el mismo Google Apps Script (con un "mode" distinto)
  * o un Web App / Google Form diferente — tú decides.
  */
-const MEGATE_ENDPOINT = "https://script.google.com/macros/s/AKfycbw17BgOebdbBUxg8XP9uQPynWQsPFYqwWcdf_6tL621rqc_EZ2kZTug93zmhPTXZHf_uQ/exec";
+const MEGATE_ENDPOINT = "https://script.google.com/macros/s/AKfycby0gZwfniiUiL4GrjqaAfiidIajbIL2n4HjafOLJKchIzt4CWP1le7GYT_W8hIQ1qnekA/exec";
 
 let megateSubmitting = false;
 
@@ -507,7 +507,7 @@ if (megateSubmitBtn) {
     try {
       const response = await fetch(MEGATE_ENDPOINT, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(payload),
         mode: 'cors',
       });
